@@ -1,7 +1,6 @@
 FROM rust:latest AS build
 WORKDIR /build
 COPY dero /build/dero
-RUN cd /build/packetcrypt_rs && cargo build --release --features jemalloc 
 
 
 FROM alpine:latest
