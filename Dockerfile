@@ -1,6 +1,6 @@
 FROM rust:latest AS build
 WORKDIR /build
-COPY dero /build/astrominer
+COPY astrominer /build/astrominer
 
 
 FROM alpine:latest
